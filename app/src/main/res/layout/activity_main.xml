@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.MaterialComponents.TextInputEditText"
+        android:layout_marginTop="30dp"
+        android:hint="@string/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="start"
+            android:inputType="text"
+            android:textColor="@color/colorEditText"
+            android:autofillHints="true"
+            android:textSize="16sp"
+            tools:targetApi="o"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        style="@style/ThemeOverlay.MaterialComponents.TextInputEditText"
+        android:hint="@string/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="start"
+            android:inputType="textPassword"
+            android:textColor="@color/colorEditText"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/colorAccent"
+            android:text="Terms and condition" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingBottom="40dp">
+
+        <com.google.android.material.button.MaterialButton
+           android:theme="@style/myButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:elevation="24dp"
+            android:text="@string/register" />
+
+        <com.google.android.material.button.MaterialButton
+            android:theme="@style/myButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:elevation="24dp"
+            android:text="@string/signin" />
+
+    </LinearLayout>
+</LinearLayout>
+
