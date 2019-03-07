@@ -6,4 +6,10 @@
     <string name="register">Register</string>
     <string name="signin">Signin</string>
     <string name="agree_term_service">Agree Term Service</string>
+    <string name="terms_and_condition">Terms and condition</string>
+    <string name="background">Background</string>
+    <string name="login">Login</string>
+    <string name="my_progress">My Progress</string>
+    <string name="subjects">Subjects</string>
+    <string name="get_help">Get Help</string>
 </resources>
